@@ -226,7 +226,8 @@ Natural
 								'2'=>__( 'Fresh', 'alchem-pro' ),
 								'3'=>__( 'Elegant', 'alchem-pro' ),
 								'4'=>__( 'Passionate', 'alchem-pro' ),
-								'5'=>__( 'Natural', 'alchem-pro' )
+								'5'=>__( 'Natural', 'alchem-pro' ),
+                                                                'slt'=>__( 'SLT Style', 'alchem-pro')
 								);
 	$home_style         = absint(alchem_option('home_style',0));
 	
@@ -735,7 +736,7 @@ if( $home_style == '5'):
 		'section' => $section,
 		'type'    => 'select',
 		'choices' => $home_styles,
-		'default' => '0',
+		'default' => 'slt',
 	);
 	
 	// Sections Order

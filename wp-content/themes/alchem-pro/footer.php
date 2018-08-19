@@ -40,7 +40,7 @@
 					?>
                     <?php if( $display_copyright_bar == 'yes' ):?>
                     <div class="site-info">
-                    <?php echo do_shortcode($copyright_text);?>
+                    <?php echo str_replace("%d",date('Y'),do_shortcode($copyright_text));?>
                     </div>
                     <?php endif;?>
                 </div>
